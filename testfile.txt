@@ -1,5 +1,17 @@
 git clone https://github.com/choihani/firstgitrepo.git : 깃 소스 다운로드, 작업내역도 받아옴
 
-해당 폴더에서 오른쪽버튼 git bash here 누르면 해당 폴더에서 시작
+* 해당 폴더에서 오른쪽버튼 git bash here 누르면 해당 폴더에서 시작
 
 git pull origin master 원격저장소의 변경내역을 로컬 저장소에 반영
+git revert "되돌리고 싶은 commit hash" 
+git log : commit의 hash를 확인하고 싶을때는 git log 명령어를 활용
+
+* git init을 하면 기본적으로 master 브랜치 생성
+* Head : 현재 작업중인 branch
+
+git branch : 현재 브랜치 리스트 조회
+git branch developer2 : developer2 브랜치 생성
+git checkout developer2 : developer2 브랜치로 변경
+git branch -D developer2 : developer2 브랜치 삭제
+git push origin :developer2 : git branch 삭제내역을 원격저장소레 반영하기 위해서는 다음과 같이 push명령어를 사용
+* 삭제할때 주의사항 체크아웃된 브랜치를 삭제하면 안되고, 다른브랜치로 체크아웃후 삭제
